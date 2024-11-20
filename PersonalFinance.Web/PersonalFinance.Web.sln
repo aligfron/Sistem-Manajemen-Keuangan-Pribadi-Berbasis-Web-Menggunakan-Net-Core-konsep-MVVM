@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.Web", "PersonalFinance.Web\PersonalFinance.Web.csproj", "{8325735F-498E-4022-AE92-EF3AF6A56B91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalFinance.Web", "PersonalFinance.Web\PersonalFinance.Web.csproj", "{8325735F-498E-4022-AE92-EF3AF6A56B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.API", "PersonalFinance.API\PersonalFinance.API.csproj", "{E73EE884-806F-4DFE-81E7-BC7946D8A0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.ViewModel", "PersonalFinance.ViewModel\PersonalFinance.ViewModel.csproj", "{93EAFA26-07F7-4437-9339-17C31776F197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.DataModel", "PersonalFinance.DataModel\PersonalFinance.DataModel.csproj", "{CDC45CBC-EE46-49C3-B13C-965BF66DED26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinance.DataAccess", "PersonalFinance.DataAccess\PersonalFinance.DataAccess.csproj", "{8FE5FB53-233A-467D-8D2A-88A2675B639E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{8325735F-498E-4022-AE92-EF3AF6A56B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8325735F-498E-4022-AE92-EF3AF6A56B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8325735F-498E-4022-AE92-EF3AF6A56B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73EE884-806F-4DFE-81E7-BC7946D8A0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73EE884-806F-4DFE-81E7-BC7946D8A0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73EE884-806F-4DFE-81E7-BC7946D8A0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73EE884-806F-4DFE-81E7-BC7946D8A0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93EAFA26-07F7-4437-9339-17C31776F197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EAFA26-07F7-4437-9339-17C31776F197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EAFA26-07F7-4437-9339-17C31776F197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EAFA26-07F7-4437-9339-17C31776F197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC45CBC-EE46-49C3-B13C-965BF66DED26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC45CBC-EE46-49C3-B13C-965BF66DED26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC45CBC-EE46-49C3-B13C-965BF66DED26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC45CBC-EE46-49C3-B13C-965BF66DED26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE5FB53-233A-467D-8D2A-88A2675B639E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE5FB53-233A-467D-8D2A-88A2675B639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE5FB53-233A-467D-8D2A-88A2675B639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE5FB53-233A-467D-8D2A-88A2675B639E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
