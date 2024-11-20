@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using PersonalFinance.DataModel;
+
 namespace PersonalFinance.API
 {
     public class Program
@@ -12,7 +15,11 @@ namespace PersonalFinance.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            //sql server DB
+            builder.Services.AddDbContext<db_personal_financeContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
