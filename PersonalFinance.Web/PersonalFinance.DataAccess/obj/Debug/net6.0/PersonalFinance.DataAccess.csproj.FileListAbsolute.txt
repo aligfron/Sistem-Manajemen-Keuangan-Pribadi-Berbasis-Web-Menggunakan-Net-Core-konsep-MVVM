@@ -10,3 +10,9 @@ D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\Per
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\obj\Debug\net6.0\refint\PersonalFinance.DataAccess.dll
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\obj\Debug\net6.0\PersonalFinance.DataAccess.pdb
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\obj\Debug\net6.0\ref\PersonalFinance.DataAccess.dll
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\bin\Debug\net6.0\PersonalFinance.DataModel.dll
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\bin\Debug\net6.0\PersonalFinance.ViewModel.dll
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\bin\Debug\net6.0\PersonalFinance.DataModel.pdb
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\bin\Debug\net6.0\PersonalFinance.ViewModel.pdb
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\obj\Debug\net6.0\PersonalFinance.DataAccess.csproj.AssemblyReference.cache
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.DataAccess\obj\Debug\net6.0\Personal.7A51D06A.Up2Date

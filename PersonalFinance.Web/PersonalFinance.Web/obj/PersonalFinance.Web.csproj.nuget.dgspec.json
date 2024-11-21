@@ -32,7 +32,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.DataModel\\PersonalFinance.DataModel.csproj": {
+                "projectPath": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.DataModel\\PersonalFinance.DataModel.csproj"
+              },
+              "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.ViewModel\\PersonalFinance.ViewModel.csproj": {
+                "projectPath": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.ViewModel\\PersonalFinance.ViewModel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -542,6 +542,10 @@
         }
       },
       "PersonalFinance.DataAccess/1.0.0": {
+        "dependencies": {
+          "PersonalFinance.DataModel": "1.0.0",
+          "PersonalFinance.ViewModel": "1.0.0"
+        },
         "runtime": {
           "PersonalFinance.DataAccess.dll": {}
         }

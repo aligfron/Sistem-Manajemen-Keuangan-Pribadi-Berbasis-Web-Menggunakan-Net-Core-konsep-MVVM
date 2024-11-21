@@ -3577,6 +3577,10 @@
       "PersonalFinance.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PersonalFinance.DataModel": "1.0.0",
+          "PersonalFinance.ViewModel": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PersonalFinance.DataAccess.dll": {}
         },

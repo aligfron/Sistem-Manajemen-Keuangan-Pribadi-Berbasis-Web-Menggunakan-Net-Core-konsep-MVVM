@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalFinance.DataModel\PersonalFinance.DataModel.csproj" />
+    <ProjectReference Include="..\PersonalFinance.ViewModel\PersonalFinance.ViewModel.csproj" />
+  </ItemGroup>
+
 </Project>

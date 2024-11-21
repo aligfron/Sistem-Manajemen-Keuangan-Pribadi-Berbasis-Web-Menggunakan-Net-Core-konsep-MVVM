@@ -261,3 +261,4 @@ D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\Per
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.Web\obj\Debug\net6.0\PersonalFinance.Web.pdb
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.Web\obj\Debug\net6.0\PersonalFinance.Web.genruntimeconfig.cache
 D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.Web\obj\Debug\net6.0\ref\PersonalFinance.Web.dll
+D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Dashbord.cshtml.rz.scp.css

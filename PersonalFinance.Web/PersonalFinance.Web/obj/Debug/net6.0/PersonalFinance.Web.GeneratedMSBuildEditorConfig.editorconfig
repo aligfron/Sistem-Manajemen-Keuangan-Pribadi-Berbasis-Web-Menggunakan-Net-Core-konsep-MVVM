@@ -18,16 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\projek-praplacement\Sistem Manajemen Keuangan Pribadi\PersonalFinance.Web\PersonalFinance.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Dashbord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Home/Registrasi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXNpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -41,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/_Dashbord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-hdvru017hg
 
 [D:/projek-praplacement/Sistem Manajemen Keuangan Pribadi/PersonalFinance.Web/PersonalFinance.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

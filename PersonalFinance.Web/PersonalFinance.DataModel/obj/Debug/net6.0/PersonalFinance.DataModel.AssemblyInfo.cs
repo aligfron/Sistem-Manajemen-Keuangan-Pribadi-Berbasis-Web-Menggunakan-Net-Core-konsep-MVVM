@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonalFinance.DataModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cf42aebd91c7cd3718bf988d45ad67d8c838531")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1698d8b01880f280cb81f2c8acbd3039f2be1a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonalFinance.DataModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonalFinance.DataModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
