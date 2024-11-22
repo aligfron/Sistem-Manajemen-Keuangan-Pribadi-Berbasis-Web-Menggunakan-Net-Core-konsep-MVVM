@@ -1,0 +1,163 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<VMMoneySource>? 
+@{
+    Layout = "_Dashbord";
+}
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                <h3 class="content-header-title mb-0 d-inline-block">Managemen Pemasukan Keuangan</h3>
+                <div class="row breadcrumbs-top d-inline-block">
+                    <div class="breadcrumb-wrapper col-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-controller="Dashbord" asp-action="index">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                Pemasukan
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="content-header-right col-md-4 col-12 d-none d-md-inline-block">
+                <div class="btn-group float-md-right">
+                    <button id="btnAdd" class="btn-gradient-secondary btn-sm white" data-bs-toggle="modal" data-bs-target="#staticModal">Tambah Pemasukan Baru</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Cards Section -->
+        <div class="card-content">
+            <div class="card-body">
+                <div class="row d-flex justify-content-start">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card bg-success text-white">
+                            <div class="card-body text-center">
+                                <h5 class="mt-0 text-capitalize font-weight-bold text-white">Pemasukan Bulan Ini</h5>
+
+                                @{
+                                    decimal totalAmount = 0;
+                                    foreach (VMMoneySource ms in Model)
+                                    {
+                                        if (ms.CreatedOn.HasValue && ms.CreatedOn.Value.Month == DateTime.Now.Month && ms.CreatedOn.Value.Year == DateTime.Now.Year)
+                                        {
+                                            totalAmount += ms.Amount;
+                                        }
+                                    }
+                                }
+                                <h6 class="text-white">Rp. @totalAmount.ToString("N0", new System.Globalization.CultureInfo("id-ID"))</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body text-center">
+                                <h5 class="mt-0 text-capitalize font-weight-bold text-white">Pemasukan Bulan Sebelumnya</h5>
+                                @{
+                                    decimal totalAmount1 = 0;
+                                    foreach (VMMoneySource ms in Model)
+                                    {
+                                        if (ms.CreatedOn.HasValue)
+                                        {
+                                            int currentMonth = DateTime.Now.Month;
+                                            int previousMonth = currentMonth == 1 ? 12 : currentMonth - 1;  // Handling the transition from January to December
+
+                                            if (ms.CreatedOn.Value.Month == previousMonth)
+                                            {
+                                                totalAmount1 += ms.Amount;
+                                            }
+                                        }
+                                    }
+                                }
+                                <h6 class="text-white">Rp. @totalAmount1.ToString("N0", new System.Globalization.CultureInfo("id-ID"))</h6>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4 col-sm-12 ">
+                        <div class="card bg-warning">
+                            <div class="card-body text-center">
+                                <h5 class="mt-0 text-capitalize font-weight-bold text-white">Total Uang Saat ini</h5>
+                                @{
+                                    decimal totalAmount2 = 0;
+                                    foreach (VMMoneySource ms in Model)
+                                    {
+                                        totalAmount2 += ms.Amount;
+                                    }
+                                 }
+                                <h6 class="text-white">Rp. @totalAmount2.ToString("N0", new System.Globalization.CultureInfo("id-ID"))</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Cards Section -->
+        <div class="content-body">
+            <div class="row">
+                <div class="col-md-10 col-12  order-2">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div id="accordion" class="collapse-icon accordion-icon-rotate left">
+                                <div class="card">
+                                    <div class="card-header" id="heading11">
+                                        <a class="card-title lead collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11" href="#">Data Penyebaran Dana</a>
+                                    </div>
+                                    <div id="collapse11" class="collapse show" aria-labelledby="heading11" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div id="accordion1" class="collapse-icon accordion-icon-rotate left">
+                                <div class="card">
+                                    <div class="card-header" id="heading23">
+                                        <a class="card-title lead collapsed" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23" href="#" >Riwayat Penambahan Dana</a>
+                                    </div>
+                                    <div id="collapse23" class="collapse show" aria-labelledby="heading23" data-parent="#accordion1">
+                                        <div class="card-body">
+
+                                            <partial name="RiwayarPemasukan" />
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-2 col-12 order-1">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Data Penyebaran Dana</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Riwayat Penambahan Dana</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Script -->
+
+<script>
+    $("#btnAdd").click(function (e) {
+        $("#staticModalBody").html("");
+        $("#staticModalBody").load("/Pemasukan/Create/");
+    });
+</script>

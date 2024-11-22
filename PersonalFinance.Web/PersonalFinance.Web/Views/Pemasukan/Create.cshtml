@@ -1,0 +1,117 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = null;
+}
+
+<div class="card">
+    <div class="card-body">
+        <form id="frmAdd">
+            <div class="card-title row">
+                <div class="col-4">Jumlah Uang<span class="text-danger"> * </span></div>
+                <div class="col-8"><input type="number" class="form-control" name="Amount" /></div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Pilih Lokasi Sumber Dana<span class="text-danger"> * </span></div>
+                <div class="col-8">
+                    <select id="SourceName" name="SourceName" class="form-select" style="width: 100%;">
+                        <option value="">--Pilih Lokasi Sumber Dana--</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Rekening BCA">Rekening BCA</option>
+                        <option value="Rekening BNI">Rekening BNI</option>
+                        <option value="Rekening BRI">Rekening BRI</option>
+                        <option value="Rekening Mandiri">Rekening Mandiri</option>
+                        <option value="Rekening CIMB Niaga">Rekening CIMB Niaga</option>
+                        <option value="Rekening Bank Danamon">Rekening Bank Danamon</option>
+                        <option value="Rekening Bank Permata">Rekening Bank Permata</option>
+                        <option value="Rekening Bank BTN">Rekening Bank BTN</option>
+                        <option value="Rekening Bank DKI">Rekening Bank DKI</option>
+                        <option value="Rekening Bank Maybank">Rekening Bank Maybank</option>
+                        <option value="Rekening Bank Mega">Rekening Bank Mega</option>
+                        <option value="Rekening Bank Sinarmas">Rekening Bank Sinarmas</option>
+                        <option value="Rekening Bank Panin">Rekening Bank Panin</option>
+                        <option value="Rekening Bank Bukopin">Rekening Bank Bukopin</option>
+                        <option value="Rekening Bank Jago">Rekening Bank Jago</option>
+                        <option value="Rekening BNI Syariah">Rekening BNI Syariah</option>
+                        <option value="OVO">OVO</option>
+                        <option value="GoPay">GoPay</option>
+                        <option value="Dana">Dana</option>
+                        <option value="LinkAja">LinkAja</option>
+                        <option value="ShopeePay">ShopeePay</option>
+                        <option value="Indomaret Card">Indomaret Card</option>
+                        <option value="Alfamart Card">Alfamart Card</option>
+                        <option value="Doku Wallet">Doku Wallet</option>
+                        <option value="Paytren">Paytren</option>
+                        <option value="Xendit">Xendit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-title row">
+                <div class="col-4">Pilih Sumber Dana<span class="text-danger"> * </span></div>
+                <div class="col-8">
+                    <select id="Kategori" name="Kategori" class="form-select" style="width: 100%;">
+                        <option value="">--Pilih Sumber Dana--</option>
+                        <option value="Gaji">Gaji</option>
+                        <option value="Hadiah">Hadiah</option>
+                        <option value="Uang Saku">Uang Saku</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-success" id="btnSave">Tambah</button>
+        &nbsp;
+        <button data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary" id="btnReset">Batal</button>
+        
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        $("#staticModalLabel").text("@ViewBag.Title");
+        $("#btnSave").click(function (e) {
+
+            $.ajax({
+                url: "/Pemasukan/Create",
+                type: "post",
+                data: $("#frmAdd").serialize(),
+                dataType: "json",
+                //beforeSend: () => { },
+                success: function (response) {
+                    if (response.statusCode == 200 || response.statusCode == 201) {
+                        // Tampilkan alert sukses
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil Tambah Data',
+                            showConfirmButton: false,
+                            timer: 3000 // Show the alert for 2 seconds
+                        }).then(() => {
+                            location.reload(); // Reload page after alert
+                        });
+                    } else {
+                        alert(response.statusCose + " - " + response.message)
+                    }
+                },
+                error: function (errResponse) {
+                    console.error(errResponse);
+                }
+            });
+
+            return false;
+        });
+        $("#frmAdd").submit(function (e) {
+            //desable from submit function
+            e.preventDefault();
+        });
+
+        $("#btnReset").click(() => {
+            $("#frmAdd")[0].reset();
+        });
+    });
+</script>

@@ -4773,8 +4773,16 @@
       "PackagePath": "staticwebassets\\assets\\scss\\variables\\variables.scss"
     },
     {
+      "Id": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\favicon.ico",

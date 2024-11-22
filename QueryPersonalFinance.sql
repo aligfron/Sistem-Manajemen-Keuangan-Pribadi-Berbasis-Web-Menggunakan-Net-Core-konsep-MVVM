@@ -55,10 +55,12 @@ CREATE TABLE Budget (
     DeletedOn DATETIME
 );
 
+
 -- Tabel MoneySources
 CREATE TABLE MoneySources (
     SourceId INT PRIMARY KEY IDENTITY(1,1),
     UserId INT ,
+	Kategori varchar (50),
     SourceName NVARCHAR(50) NOT NULL,
     Amount DECIMAL(18,2) NOT NULL,
     CreatedBy NVARCHAR(50),

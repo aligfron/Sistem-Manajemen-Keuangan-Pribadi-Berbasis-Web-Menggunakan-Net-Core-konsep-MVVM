@@ -8,6 +8,7 @@ namespace PersonalFinance.DataModel
         public int SourceId { get; set; }
         public int? UserId { get; set; }
         public string SourceName { get; set; } = null!;
+        public string? Kategori { get; set; }
         public decimal Amount { get; set; }
         public string? CreatedBy { get; set; }
         public DateTime? CreatedOn { get; set; }

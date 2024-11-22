@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B9Wp9R/6LZylOC1229Fx0FgH91/wjA3Lgb3YEbnY2P8=",
+  "Hash": "MdDHVUJbfeZan0LiTuBvgZiX5l7Tetp2wMNRbf0DZis=",
   "Source": "PersonalFinance.Web",
   "BasePath": "_content/PersonalFinance.Web",
   "Mode": "Default",
@@ -22703,6 +22703,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\scss\\variables\\variables.scss"
     },
     {
+      "Identity": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "PersonalFinance.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\",
+      "BasePath": "_content/PersonalFinance.Web",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
       "Identity": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\site.css",
       "SourceId": "PersonalFinance.Web",
       "SourceType": "Discovered",
@@ -22720,6 +22739,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\css\\style.css",
+      "SourceId": "PersonalFinance.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\",
+      "BasePath": "_content/PersonalFinance.Web",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\projek-praplacement\\Sistem Manajemen Keuangan Pribadi\\PersonalFinance.Web\\PersonalFinance.Web\\wwwroot\\favicon.ico",

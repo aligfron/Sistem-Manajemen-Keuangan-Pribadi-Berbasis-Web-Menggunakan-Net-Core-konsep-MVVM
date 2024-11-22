@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+    <div class="table-responsive">
+        <table class="table table-de mb-0">
+            <thead>
+                <tr>
+                    <th>Waktu Transaksi</th>
+                    <th>Lokasi Dana</th>
+                    <th>Sumber Dana</th>
+                    <th>Jumlah</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            @{
+                if (Model != null || Model.Count > 0)
+                {
+                    foreach (VMMoneySource ms in Model)
+                    {
+                        <tr>
+                            <td >@ms.CreatedOn</td>
+                            <td >@ms.SourceName</td>
+                            <td >@ms.Kategori</td>
+                            <td>Rp. @ms.Amount.ToString("N0", new System.Globalization.CultureInfo("id-ID"))</td>
+                            <td >
+                                <div class="btn-group" role="group">
+                                    <button data-id="@ms.SourceId" class="btn btn-primary" title="Edit" data-bs-toggle="modal" data-bs-target="#staticModal">Edit</button>
+                                    <button data-id="@ms.SourceId" class="btn btn-danger" title="Delete" data-bs-toggle="modal" data-bs-target="#staticModal">Hapus</button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center">Data Belum Ada</td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
